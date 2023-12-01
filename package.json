@@ -1,0 +1,19 @@
+{
+  "name": "desafio-aulao-samlucax",
+  "version": "1.0.0",
+  "description": "Desafio do aulão do Samuel Lucas de Cypress, para refatoração e correção de testes E2E",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "test:headless": "cypress run"
+  },
+  "author": "Erick Ribeiro",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "prettier": "^2.0.0"
+  },
+  "cypressConfig": "cypress.json"
+}
