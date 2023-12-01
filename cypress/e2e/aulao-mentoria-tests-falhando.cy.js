@@ -59,7 +59,7 @@ describe('Cadastrar entradas e saídas com bugs', () => {
     cy.get('tbody tr').should('have.length', 1)
   })
 
-  it('Cadastrar uma nova transação de entrada - falha 5', () => {
+  it.only('Cadastrar uma nova transação de entrada - falha 5', () => {
     cy.visit('https://devfinance-agilizei.netlify.app')
 
     cy.contains('Nova Transação').click()
@@ -70,6 +70,8 @@ describe('Cadastrar entradas e saídas com bugs', () => {
     cy.contains('Salvar').click()
 
     cy.get('.alert').should('not.exist')
+    cy.get('tbody tr').should('have.length', 1)
+
   })
 
   it.skip('Cadastrar uma nova transação de entrada - falha 6', () => {
