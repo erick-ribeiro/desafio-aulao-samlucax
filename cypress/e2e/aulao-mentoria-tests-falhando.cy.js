@@ -39,7 +39,7 @@ describe('Cadastrar entradas e saídas com bugs', () => {
     cy.get('#description').type('Mesada')
     cy.get('#amount').type(100)
 
-    cy.get('#date').type('02-01-2023')
+    cy.get('#date').type('2023-02-01') //YYYY-MM-DD
 
     cy.contains('Salvar').click()
     
