@@ -4,7 +4,6 @@ describe('Cadastrar entradas e saídas com bugs', () => {
     cy.visit('/')
   })
   
-  
   it('Cadastrar uma nova transação de entrada - falha 1', () => {
     // Arrange
     cy.contains('Nova Transação').click()
